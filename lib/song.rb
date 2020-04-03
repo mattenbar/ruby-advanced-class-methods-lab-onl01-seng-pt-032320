@@ -51,7 +51,6 @@ class Song
     file_name_array = file_name.split(/[\-\.]/)
     file_name_array[0] = file_name_array[0][0..-2]
     file_name_array[1] = file_name_array[1][1..-1]
-    binding.pry
   end
 
 
