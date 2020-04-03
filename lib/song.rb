@@ -1,3 +1,5 @@
+require "pry"
+
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -47,6 +49,7 @@ class Song
 
   def self.new_from_filename(file_name)
     file_name_array = file_name.splite(/[\-\.]/)
+    binding.pry
   end
 
 
