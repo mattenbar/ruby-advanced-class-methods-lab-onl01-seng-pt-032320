@@ -49,6 +49,7 @@ class Song
 
   def self.new_from_filename(file_name)
     file_name_array = file_name.split(/[\-\.]/)
+    file_name_array[0] = file_name_array[0][0..-2]
     binding.pry
   end
 
