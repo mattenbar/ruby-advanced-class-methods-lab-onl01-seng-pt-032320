@@ -29,7 +29,11 @@ class Song
     song
   end
 
-
+  def self.find_by_name(name)
+    if @@all.include?(song.name)
+      song
+    end
+  end
 
 
 
