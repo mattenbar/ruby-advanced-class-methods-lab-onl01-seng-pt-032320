@@ -51,7 +51,7 @@ class Song
     file_name_array = file_name.split(/[\-\.]/)
     artist_name = file_name_array[0] = file_name_array[0][0..-2]
     name = file_name_array[1] = file_name_array[1][1..-1]
-    song = song.new
+    song = self.new
     song.name = name
     song.artist_name = artist_name
     @@all << song
